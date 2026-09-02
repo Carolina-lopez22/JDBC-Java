@@ -1,0 +1,7 @@
+/Users/waltercordova/eclipse-workspace-umg/Programacion2/clase07-biblioteca-jdbc/src/main/java/edu/umg/programacion2/clase07/biblioteca/Main.java
+/Users/waltercordova/eclipse-workspace-umg/Programacion2/clase07-biblioteca-jdbc/src/main/java/edu/umg/programacion2/clase07/biblioteca/dao/LibroDAO.java
+/Users/waltercordova/eclipse-workspace-umg/Programacion2/clase07-biblioteca-jdbc/src/main/java/edu/umg/programacion2/clase07/biblioteca/dao/PrestamoDAO.java
+/Users/waltercordova/eclipse-workspace-umg/Programacion2/clase07-biblioteca-jdbc/src/main/java/edu/umg/programacion2/clase07/biblioteca/modelo/Libro.java
+/Users/waltercordova/eclipse-workspace-umg/Programacion2/clase07-biblioteca-jdbc/src/main/java/edu/umg/programacion2/clase07/biblioteca/modelo/Prestamo.java
+/Users/waltercordova/eclipse-workspace-umg/Programacion2/clase07-biblioteca-jdbc/src/main/java/edu/umg/programacion2/clase07/biblioteca/modelo/PrestamoDetalle.java
+/Users/waltercordova/eclipse-workspace-umg/Programacion2/clase07-biblioteca-jdbc/src/main/java/edu/umg/programacion2/clase07/biblioteca/servicio/ReporteService.java
