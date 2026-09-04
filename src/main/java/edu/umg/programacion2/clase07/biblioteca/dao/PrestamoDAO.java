@@ -119,5 +119,5 @@ public class PrestamoDAO {
     }
         return resultado;
     }
-}
+}// Metodo listarPrestamosActivosConLibro resuelto.
 

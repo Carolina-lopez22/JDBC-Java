@@ -28,7 +28,6 @@ public class ReporteService {
         this.libroDAO = libroDAO;
         this.prestamoDAO = prestamoDAO;
     }
-
     /**
      * EJERCICIO DE LA CLASE: encontrar los libros que NUNCA se han prestado.
      *
@@ -55,11 +54,23 @@ public class ReporteService {
      */
     public Set<Libro> librosNuncaPrestados() throws SQLException {
         Set<Libro> resultado = new HashSet<>();
-        // TODO: usar libroDAO y prestamoDAO para llenar "resultado" segun las pistas de arriba.
-
+        
+        List<Libro> libros = libroDAO.listarTodos();
+        List<PrestamoDetalle> prestamosActivos = prestamoDAO.listarPrestamosActivosConLibro();
+        Set<String> titulosPrestados = new HashSet<>();
+        for (PrestamoDetalle prestamo: prestamosActivos) {
+        	titulosPrestados.add(prestamo.getTituloLibro());
+        	  }
+        for (Libro libro : libros) {
+        	if(!titulosPrestados.contains(libro.getTitulo())) {
+        		resultado.add(libro);
+        	}
+        }
         return resultado;
-    }
-
+}//Metodo completado, ahora ya muestra los libros nunca prestados, comparando todos 
+    // los libros registrados con los prestamos actuales,
+        
+       
     /**
      * EJERCICIO DE LA CLASE: contar cuantas veces aparece cada titulo entre
      * los prestamos activos.
